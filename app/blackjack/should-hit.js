@@ -1,17 +1,9 @@
 import cardSum from './card-sum';
 
-export default function(card1, card2) {
+export default function (card1, card2) {
   if (card1 === card2) {
     return false;
   }
 
-  if (cardSum(card1, card2) < 17) {
-    return true;
-  }
-  if (cardSum(card1, card2) === 17) {
-    return true;
-  }
-  if (cardSum(card1, card2) > 17) {
-    return false;
-  }
+  return cardSum(card1, card2) <= 17;
 }
