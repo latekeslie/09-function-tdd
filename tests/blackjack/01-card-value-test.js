@@ -1,5 +1,9 @@
 import cardValue from '../../app/blackjack/card-value';
 
+test('It works', (assert) => {
+  assert.ok(true);
+});
+
 test('A bot knows a numeric values', (assert) => {
   const five = cardValue('5');
   const nine = cardValue('9');
